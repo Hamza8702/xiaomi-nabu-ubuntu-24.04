@@ -39,9 +39,9 @@ jobs:
 
           # Download and Extract Ubuntu Base
           if [ "$VERSION" = "26.04" ]; then
-            URL="https://cdimage.ubuntu.com/ubuntu-base/releases/26.04/beta/ubuntu-base-26.04-beta-base-arm64.tar.gz"
+            URL="https://cdimage.ubuntu.com/ubuntu-base/releases/26.04/releases/ubuntu-base-26.04-base-arm64.tar.gz"
           else
-            URL="https://cdimage.ubuntu.com/ubuntu-base/releases/$VERSION/release/ubuntu-base-$VERSION-base-arm64.tar.gz"
+            URL="https://cdimage.ubuntu.com/ubuntu-base/releases/$VERSION/releases/ubuntu-base-$VERSION-base-arm64.tar.gz"
           fi
           
           wget -q $URL -O ubuntu-base.tar.gz
