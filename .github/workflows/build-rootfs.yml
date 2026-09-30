@@ -65,7 +65,7 @@ jobs:
           # Network and Hostname
           echo "nameserver 1.1.1.1" | sudo tee rootdir/etc/resolv.conf
           echo "nabu" | sudo tee rootdir/etc/hostname
-          echo -e "127.0.0.1 localhost\n127.0.1.1 nabu" | sudo tee rootdir/etc/hosts
+          echo -e "127.0.0.1 localhost\n127.0.1.1 miatoll" | sudo tee rootdir/etc/hosts
 
           # Chroot execution
           sudo chroot rootdir /bin/bash <<EOF
@@ -110,7 +110,7 @@ jobs:
           apt install -y $EXTRA_PACKAGES
           apt --fix-broken install -y
           
-          apt install -y ubuntu-desktop
+          apt install plasma-mobile plasma-mobile-tweaks spacebar dialer kdeconnect maliit-keyboard -y
           apt --fix-broken install -y
           apt upgrade -y
           apt --fix-broken install -y
