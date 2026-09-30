@@ -1,4 +1,4 @@
-name: Build Ubuntu image for Xiaomi Pad 5 (nabu)
+name: hamza Xiaomi Pad 5 (nabu)
 
 on:
   workflow_dispatch:
